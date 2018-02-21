@@ -18,7 +18,8 @@
     "tabs",
     "http://*/*",
     "https://*/*",
-    "storage"
+    "storage",
+    "activeTab"
   ],
   "options_ui": {
     "page": "options.html",
