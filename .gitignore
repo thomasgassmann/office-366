@@ -7,4 +7,4 @@ src/app/bower_components
 src/test/bower_components
 package
 app/scripts
-
+src/package-lock.json
