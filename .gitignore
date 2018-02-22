@@ -1,10 +1,4 @@
-src/node_modules
-temp
-.tmp
-dist
-.sass-cache
-src/app/bower_components
-src/test/bower_components
-package
-app/scripts
-src/package-lock.json
+npm-debug.log
+node_modules/
+dist/js
+tmp/
