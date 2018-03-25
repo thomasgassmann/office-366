@@ -17,6 +17,15 @@ gulp.task('ng-build', function (cb) {
     });
 });
 
+gulp.task('ng-build-prod', function (cb) {
+    exec('ng build --prod --aot', function (err, stdout, stderr) {
+        console.log(stdout);
+        console.log(stderr);
+        cb(err);
+        return true;
+    });
+});
+
 gulp.task('content-script', function () {
     return browserify({
         basedir: './src',
@@ -33,4 +42,5 @@ gulp.task('content-script', function () {
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', ['ng-build', 'content-script']);
+gulp.task('dev', ['ng-build', 'content-script']);
+gulp.task('prod', ['ng-build-prod', 'content-script']);

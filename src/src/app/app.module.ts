@@ -1,22 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 import { PopupComponent } from './popup/popup.component';
-import { EventPageComponent } from './event-page/event-page.component';
 
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PopupComponent,
-    EventPageComponent
+    PopupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
