@@ -1,0 +1,26 @@
+{
+  "name": "Office 366",
+  "version": "1.0.3",
+  "manifest_version": 2,
+  "description": "Chrome Extension to replace O365 with O366 in a leap year",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "scripts/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab"
+  ]
+}

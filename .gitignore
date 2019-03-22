@@ -1,5 +1,10 @@
-npm-debug.log
-node_modules/
-dist/js
-tmp/
-packages-lock.json
+node_modules
+temp
+.tmp
+dist
+.sass-cache
+app/bower_components
+test/bower_components
+package
+app/scripts
+
