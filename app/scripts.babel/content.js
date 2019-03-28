@@ -3,6 +3,7 @@ let terms = [
     item: /Office 365/ig,
     through: 'Office 366',
     if: () => {
+      const year = new Date().getFullYear();
       return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
     }
   }
